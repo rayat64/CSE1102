@@ -6,7 +6,7 @@ int main()
     int n_burg, n_sand, n_pizz, n_cold;
 
 
-    printf("Enter Qty of Burger, Pizza, Sandwich And Cold Drink(maintain order of foods) \n");
+    printf("Enter NO. of Burger, Pizza, Sandwich And Cold Drink(maintain order of foods) \n");
     scanf("%d %d %d %d", &n_burg, &n_pizz, &n_sand, &n_cold);
 
     bill = n_burg*burger + n_sand*sandwich + n_pizz*pizza + n_cold*cold_drink;
@@ -18,7 +18,7 @@ int main()
 
 
     change = payment - bill;
-    printf("Change = %.2f BDT\n", change);
+    printf("Return = %.2f BDT\n", change);
 
     return 0;
 
