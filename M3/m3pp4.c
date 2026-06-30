@@ -1,25 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int x, r, n;
-    for(;;)
+    int x, i;
+    printf("Enter a Number: ");
+    scanf("%d", &x);
+    for(i=2; i<=(x-1); i++)
     {
-    printf("Enter your number: ");
-    scanf("%d" , &x);
-    r = x%10;
-    if (x<1){printf("End of Program. Thanks for using :) \nffff  ");break;}
-    while(x>0)
-    {
-
-        x = x/10;
-        n = x%10;
-        if (n==0)break;
-        r = r*10 + n;
-
-
+        if (x%i == 0)
+        {
+            printf("%d is not a prime number", x);
+            return 0;
+        }
     }
-    printf("The Reversed Number: %d \n", r);
-}
+    printf("%d is a prime number", x);
+    
 
 
     return 0;
