@@ -1,26 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int x, r, n;
-    for(;;)
-    {
+    int num, rem, s=0;
     printf("Enter your number: ");
-    scanf("%d" , &x);
-    r = x%10;
-    if (x<1){printf("End of Program. Thanks for using :) \nffff  ");break;}
-    while(x>0)
+    scanf("%d", &num);
+    while(num!=0)
     {
-
-        x = x/10;
-        n = x%10;
-        if (n==0)break;
-        r = r*10 + n;
-
-
+        rem = num%10;
+        s = s*10 + rem;
+        num = num/10;
     }
-    printf("The Reversed Number: %d \n", r);
-}
-
-
+    printf("Reversed Number = %d \n", s);
     return 0;
 }
