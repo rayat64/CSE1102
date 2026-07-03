@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int ax[5]={10, 20, 50, 40, 15}, t;
+    int ax[5]={5,4,3,2,1}, t;
     for(int i=0; i<4; i++)
     {
         for(int j=i+1; j<5;j++){
