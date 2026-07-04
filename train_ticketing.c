@@ -99,6 +99,8 @@ int main(){
             Display();
             break;
         }
+	default:
+	printf("Sorry! Wrong Selection...:)");
     }//End of Switch
 } //End of Infinty Loop of Menu
 
