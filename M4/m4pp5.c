@@ -1,7 +1,11 @@
 #include<stdio.h>
+#include<math.h>
 int main(){
     int roll[10]={1, 2, 3, 4, 5, 6,7, 8,9, 10}, rolls, counter_25;
-    float cgpa[10]={4.0, 3.9, 3.8, 3.9, 2.5, 2.1, 3.3, 2.00, 3.00, 4.0}, c_gpa;
+    float cgpa[10]={4.0, 3.9, 3.8, 3.9, 2.5, 2.1, 3.3, 2.00, 3.00, 4.0};
+    float cgpa_sort[10];
+    int roll_sort[10];
+    
 
 
     //find cgpa using roll
@@ -42,5 +46,32 @@ int main(){
             printf("Roll %d has the highest CGPA %f \n", roll[i], cgpa[max_cg]);
         }
     }
-    
+    //top 5 students found by sorting CGPA and Changing assigned roll with 
+    //corresponding indices
+    int topper, j, k, temp_roll;
+    float temp_cg;
+    for(k=0; k<10; k++){
+        for(j=k+1; j<10; j++){
+            if(cgpa[k]<cgpa[j])
+            {
+                temp_cg = cgpa[j];
+                temp_roll = roll[j];
+                cgpa[j]=cgpa[k];
+                roll[j]=roll[k];
+                cgpa[k]=temp_cg;
+                roll[k]=temp_roll;
+
+            }
+
+        }
+    }
+    //The array is now sorted accroing to the cg, the rolls were accordingly changed
+    for(i=0; i<5; i++)
+    {
+            printf("%d. Roll: %d CGPA: %.2f \n", i, roll[i], cgpa[i]);
+    }
+
+
+
+
 }   
