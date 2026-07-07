@@ -6,6 +6,6 @@ For Example: m1pp3 means module 1 practice problem 3
 Also note that the files are organized into folders naming M1, M2 ...  
 Here M stands for Module
 ### note that m and M are same thing, it's not case sensitive  
-M stands for Module and PP stands for Practice Problem
+M stands for Module and PP stands for Practice Problem  
 #Cover Page Generator:  
 https://ruet-cover-page.github.io/
