@@ -31,6 +31,6 @@ int main()
     float avg = sum/(float)i;
     printf("Max. Marks=%d \n", ax[max] );
     printf("Min Marks: %d \n", ax[min]);
-    printf("Average = %f", avg);
+    printf("Average = %f \n", avg);
 
 }
