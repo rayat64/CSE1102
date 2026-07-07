@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
+    int i, j, k, t;
     int ax[100]={
         1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
         11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
@@ -13,10 +14,11 @@ int main()
         81, 82, 83, 84, 85, 86, 87, 88, 89, 90,
         91, 92, 93, 94, 95, 96, 97, 98, 99, 100
     };
-    int i, j, k, t;
-    ax[3]=0;
+
+
 
     //shifting the values to the left
+    //ax[3]=0;
 
     for(i=3; i<100; i++){ 
         t=ax[i+1];
@@ -29,5 +31,21 @@ int main()
     printf("\n");
     
     //shifting elements to the right
+    printf("Enter a value to put in index 5: ");
+    scanf("%d", &k);
+    t=0;
+    for(i=98; i>=5; i--)
+    {
+        ax[i+1]=ax[i];
+
+    }
+    ax[5]=k;
+    for(i=0; i<100; i++){
+        printf("%d ", ax[i]);
+    }
+    printf("\n");
+
+
+
     
 }
