@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<math.h>
 int main(){
     int roll[10]={1, 2, 3, 4, 5, 6,7, 8,9, 10}, rolls, counter_25;
     float cgpa[10]={4.0, 3.9, 3.8, 3.9, 2.5, 2.1, 3.3, 2.00, 3.00, 4.0};
