@@ -1,10 +1,9 @@
 #include<stdio.h>
 void Binary(int n){
-    int i, j, k;
-    i = n%2;
-    if(n!=0)
-    Binary(n/2);
-    printf("%d", i);
+
+    if(n>1){
+    Binary(n/2);}
+    printf("%d", n%2);
 }
 int main(){
     int x, i;
