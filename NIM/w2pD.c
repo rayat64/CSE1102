@@ -25,7 +25,7 @@ int main(){
         case 'a'...'z':{
             printf("Small Letters\n");
             break;}
-        case '0'...'1':{
+        case '0'...'9':{
             printf("Numbers\n");
             break;}
         default:
